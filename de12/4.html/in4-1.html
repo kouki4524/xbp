@@ -1,0 +1,29 @@
+<code>
+    <ol style="list-style:decimal-leading-zero outside;in-left:0;padding-left:36px;margin:0;background-color:#EEF;color:#000;">
+<li style="background-color:#EFF;">import random</li>
+<li style="background-color:#EFF;">#じゃんけんの手</li>
+<li style="background-color:#EFF;">list=["グー","チョキ","パー"]</li>
+<li style="background-color:#EFF;"></li>#プレイヤーの手</li>
+<li style="background-color:#EFF;">player = input("あなた：")</li>
+<li style="background-color:#EFF;">#リストから手を出す</li>
+<li style="background-color:#EFF;">com = random.choice(list)</li>
+<li style="background-color:#EFF;">print("相手:{}".format(com))</li>
+<li style="background-color:#EFF;">#プレイヤーと相手の手で勝敗を決める</li>
+<li style="background-color:#EFF;">#勝敗もプリント</li>
+<li style="background-color:#EFF;">if player == com:></li>
+<li style="background-color:#EFF;">   print("あいこです。")</li>
+<li style="background-color:#EFF;">elif player == "グー":</li>
+<li style="background-color:#EFF;">   if com == "チョキ":</li>
+<li style="background-color:#EFF;">       print("あなたの勝ち")</li>
+<li style="background-color:#EFF;">   elif com == "パー":</li>
+<li style="background-color:#EFF;">elif player == "チョキ":</li>
+<li style="background-color:#EFF;">  if com == "グー":</li>
+<li style="background-color:#EFF;">      print("あなたの負け")</li>
+<li style="background-color:#EFF;">   elif com == "パー":</li>
+<li style="background-color:#EFF;">      print("あなたの勝ち")</li>
+<li style="background-color:#EFF;">elif player == "パー":</li>
+<li style="background-color:#EFF;">    if com == "グー":</li>
+<li style="background-color:#EFF;">        print("あなたの勝ち")</li>
+<li style="background-color:#EFF;">   elif com== "チョキ":</li>
+<li style="background-color:#EFF;">       print("あなたの負け")</li>
+        </code>
