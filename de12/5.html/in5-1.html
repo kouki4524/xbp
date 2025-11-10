@@ -1,0 +1,25 @@
+<code>
+<ol style="list-style:decimal-leading-zero outside;in-left:0;padding-left:36px;margin:0;background-color:#EEF;color:#000;">
+<li style="background-color:#EFF;">from openai import OpenAI</li>
+<li style="background-color:#EEF;"></li>
+<li style="background-color:#EEF;">client = OpenAI(api_key="")</li>
+<li style="background-color:#EFF;"></li>
+<li style="background-color:#EEF;">a=input("行きたい国を入れて")</li>
+<li style="background-color:#EFF;">b=input("絶対行きたい場所を入力して")</li>
+<li style="background-color:#EEF;">c=input("予算を入力して")</li>
+<li style="background-color:#EFF;">d=input("人数を入力して")</li>
+<li style="background-color:#EEF;">e=input("日数を入力して")</li>
+<li style="background-color:#EFF;">f=input("ほかに必須事項があったら教えて")</li>
+<li style="background-color:#EEF;">question = a+b+c+d+e+f+("旅行の工程、予算の使い道を教えて")</li>
+<li style="background-color:#EFF;"></li>
+<li style="background-color:#EEF;">#ここがAPIです----------------------------</li>
+<li style="background-color:#EFF;">response = client.chat.completions.create(</li>
+<li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;model="gpt-4o-mini",</li>
+<li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;messages=[{"role": "user", "content": question}]</li>
+<li style="background-color:#EEF;">)</li>
+<li style="background-color:#EFF;">#---------------------------------------</li>
+<li style="background-color:#EEF;"></li>
+<li style="background-color:#EFF;">print("AIの答え：", response.choices[0].message.content)</li>
+<li style="background-color:#EEF;"></li>
+<li style="background-color:#EFF;"></li>
+</ol></code>
