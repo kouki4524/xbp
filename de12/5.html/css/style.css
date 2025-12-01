@@ -1,0 +1,59 @@
+/* --- 全体のフォントと背景 --- */
+html {
+  font-family: "Noto Sans JP", sans-serif;
+  background: #f5f7fa;
+  color: #333;
+  line-height: 1.7;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* --- タイトル --- */
+h1 {
+  text-align: center;
+  color: #005eff;
+  margin: 40px 0 20px;
+}
+
+/* --- コンテナ（中央寄せ&カード化） --- */
+.container {
+  max-width: 900px;
+  background: #fff;
+  margin: 0 auto;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* --- 文章の余白調整 --- */
+div, p, ul {
+  margin-bottom: 20px;
+}
+
+/* --- リンク（ボタン風） --- */
+a {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 10px 18px;
+  background: #005eff;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.25s;
+}
+a:hover {
+  background: #0043b8;
+  transform: translateY(-2px);
+}
+
+/* --- 画像を中央で見栄え良く --- */
+img {
+  width: 60%;
+  display: block;
+  margin: 20px auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+}
