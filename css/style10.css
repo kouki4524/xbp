@@ -1,0 +1,36 @@
+/* 全体設定 */
+body {
+    font-family: "Segoe UI", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    line-height: 1.7;
+    margin: 0;
+    padding: 40px;
+}
+
+/* 見出し */
+h1 {
+    background: #1e3a8a;
+    color: #fff;
+    padding: 10px 16px;
+    border-radius: 6px;
+    margin-top: 40px;
+}
+
+h2 {
+    color: #1e3a8a;
+    border-left: 6px solid #1e3a8a;
+    padding-left: 10px;
+    margin-top: 25px;
+}
+
+/* 文章ブロック */
+div {
+    background: #ffffff;
+    padding: 12px 16px;
+    margin: 10px 0 20px 0;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+/
