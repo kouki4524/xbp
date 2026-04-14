@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <title>koukiのホームページ</title>
+     <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<h1>Arduinoを使ってみる</h1>
+<div>複雑なことも簡単なものの組み合わせや応用だと改めて考えさせられる授業だった。</div>
+<div>LEDを明るいときは消し、暗いときに光らせるコード</div>
+<div>int ledPin = 13;   // LEDをつなぐピン<br>
+int sensorPin = A1; // 光センサー（フォトレジスタ）<br>
+
+void setup() {<br>
+  Serial.begin(9600);<br>
+  pinMode(ledPin, OUTPUT);<br>
+}<br>
+
+void loop() {<br>
+  int val = analogRead(sensorPin); // 明るさ取得<br>
+  Serial.println(val);
+
+  // しきい値（ここは調整する）<br>
+  if (val > 300) {   // 暗いとき<br>
+    digitalWrite(ledPin, HIGH); // LED ON<br>
+  } else {           // 明るいとき<br>
+    digitalWrite(ledPin, LOW);  // LED OFF<br>
+  }<br>
+<br>
+  delay(500);<br>
+}<br>
+</div>
+<head>
+
+          </a><br>
+
+    </div>
+
+</body>
+</html>
