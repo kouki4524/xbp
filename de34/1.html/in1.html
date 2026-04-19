@@ -6,30 +6,15 @@
 </head>
 <body>
 <h1>Arduinoを使ってみる</h1>
-<div>複雑なことも簡単なものの組み合わせや応用だと改めて考えさせられる授業だった。</div>
-<div>LEDを明るいときは消し、暗いときに光らせるコード</div>
-<div>int ledPin = 13;   // LEDをつなぐピン<br>
-int sensorPin = A1; // 光センサー（フォトレジスタ）<br>
-
-void setup() {<br>
-  Serial.begin(9600);<br>
-  pinMode(ledPin, OUTPUT);<br>
-}<br>
-
-void loop() {<br>
-  int val = analogRead(sensorPin); // 明るさ取得<br>
-  Serial.println(val);
-
-  // しきい値（ここは調整する）<br>
-  if (val > 300) {   // 暗いとき<br>
-    digitalWrite(ledPin, HIGH); // LED ON<br>
-  } else {           // 明るいとき<br>
-    digitalWrite(ledPin, LOW);  // LED OFF<br>
-  }<br>
-<br>
-  delay(500);<br>
-}<br>
-</div>
+<h2>LEDを点滅させるコード</h2>
+<div>（Highが点灯、Lowが消灯）</div>
+<br><img src="../images/1_1.jpg" width="30%"><br>
+<h2>0.3秒ごとの点滅を10回繰り返し、その後２秒ごとの点滅を３回繰り返すコード</h2>
+<br><img src="../images/1_2.jpg" width="30%"><br>
+<h2>明るさを感知するコード</h2>
+<br><img src="../images/1_3.jpg" width="30%"><br>
+<h2>明るかったら消灯、暗かったら点灯するコード</h2>
+<br><img src="../images/1_4.jpg" width="30%"><br>
 <head>
 
           </a><br>
