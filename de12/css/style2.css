@@ -1,0 +1,35 @@
+body {
+  font-family: "Hiragino Kaku Gothic ProN", sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 20px;
+}
+
+/* タイトル（もし追加するなら） */
+h1 {
+  text-align: center;
+}
+
+/* 各観察のカード */
+section {
+  background-color: #ffffff;
+  padding: 15px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* 画像 */
+img {
+  width: 100%;
+  max-width: 300px;
+  display: block;
+  margin: 0 auto 10px;
+  border-radius: 8px;
+}
+
+/* テキスト */
+p {
+  margin: 5px 0;
+  line-height: 1.5;
+}

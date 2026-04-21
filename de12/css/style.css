@@ -1,54 +1,64 @@
-@charset "utf-8";
-/* 冒頭でimport */
-@import url('https://fonts.googleapis.com/css?family=Raleway:700&display=swap');
-@import url('https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c:400,700&display=swap&subset=japanese');
-/* フォントを指定したいところで */
-
-logo img{
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    object-fit: cover; /* 画像のトリミング */
+body {
+  font-family: "Hiragino Kaku Gothic ProN", sans-serif;
+  background-color: #f4f6f8;
+  margin: 0;
+  padding: 20px;
+  line-height: 1.7;
 }
 
-logotohome img{
-    border-radius: 70%;
-    width: 70px;
-    height: 70px;
-    object-fit: cover; /* 画像のトリミング */
+/* タイトル */
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  border-bottom: 3px solid #333;
+  padding-bottom: 10px;
 }
 
-
-
-/* ========== common ========== */
-html, body {
-	font-size: 16px;
-	font-family: sans-serif;
-	color: #393939;
-    margin-left: 15px;
-    margin-bottom: 40px;
-	background: #efefef;
-}
-h1{
-    text-indent: 0em;
-}
-h2{
-    margin-left: 1em;
-    margin-top: 1em;
-}
-h3{
-    margin-left: 2em;
-}
-div{
-    margin-top: 1em;
-    margin-left: 3em;
-}
-p{
-    margin-left: 3em;
-}
-span.blackback{
-    text-indent: 3em;
-    background: #393939;
-    color: #efefef;
+/* 見出し */
+h2 {
+  margin-top: 30px;
+  border-left: 6px solid #4CAF50;
+  padding-left: 10px;
 }
 
+h3 {
+  margin-top: 20px;
+  color: #333;
+}
+
+/* 本文 */
+p {
+  margin: 10px 0;
+}
+
+/* 画像 */
+img {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  margin: 15px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* リンク */
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* 参考文献っぽく */
+p a {
+  font-weight: bold;
+}
+
+/* セクションっぽく見せる */
+h2, h3, p, img {
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+}
