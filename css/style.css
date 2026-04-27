@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+/* ページ全体 */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Yu Gothic", sans-serif;
+    background: linear-gradient(135deg, #f0f4ff, #dbeafe);
+    text-align: center;
+    color: #333;
+}
+
+/* ロゴ */
+.logotohome {
+    margin-top: 20px;
+}
+
+.logotohome img {
+    width: 120px;
+    height: auto;
+    transition: 0.3s;
+}
+
+.logotohome img:hover {
+    transform: scale(1.1);
+}
+
+/* メイン枠 */
+.container {
+    width: 70%;
+    margin: 40px auto;
+    padding: 40px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* タイトル */
+h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: #2563eb;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+/* リスト */
+ol {
+    padding: 0;
+    list-style-position: inside;
+}
+
+li {
+    margin: 20px 0;
+    font-size: 22px;
+}
+
+/* リンク */
+a {
+    text-decoration: none;
+    color: #111827;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+a:hover {
+    background: #2563eb;
+    color: white;
+}
