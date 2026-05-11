@@ -1,109 +1,61 @@
-/* 全体デザイン */
+@charset "UTF-8";
+
+/* 全体 */
 body {
-    font-family: 'Segoe UI', sans-serif;
     margin: 0;
-    padding: 0;
-    background: #0e0e10;
-    color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding: 20px;
+    font-family: "Yu Gothic", sans-serif;
+    background: linear-gradient(135deg, #eef4ff, #dbeafe);
+    color: #333;
 }
 
-/* ロゴ配置 */
+/* ロゴ */
+.logotohome {
+    margin-bottom: 20px;
+}
+
 .logotohome img {
-    width: 140px;
-    margin: 20px 0;
-    transition: 0.4s ease;
+    width: 120px;
+    transition: 0.3s;
 }
+
 .logotohome img:hover {
-    transform: scale(1.1) rotate(3deg);
+    transform: scale(1.05);
 }
 
-/* コンテンツ中央寄せ */
-.container {
-    max-width: 700px;
-    width: 90%;
-    text-align: center;
-    padding: 40px 20px;
-    border-radius: 20px;
-    background: linear-gradient(145deg, #1b1b1f, #0b0b0d);
-    box-shadow: 0 0 20px rgba(0,0,0,0.4);
-    animation: fadeInUp 0.8s ease-out;
-}
-
-/* 見出しをカッコよく */
+/* 見出し */
 h1 {
-    font-size: 3.2rem;
-    letter-spacing: 4px;
-    border-bottom: 2px solid #fff;
-    display: inline-block;
-    padding-bottom: 5px;
+    color: #2563eb;
+    border-bottom: 3px solid #2563eb;
+    padding-bottom: 10px;
 }
 
 h2 {
-    font-size: 1.4rem;
-    opacity: 0.7;
-    margin-top: 5px;
-}
-
-/* リンクリスト */
-ol {
-    list-style: none;
-    padding: 0;
     margin-top: 40px;
+    color: #1e40af;
 }
 
-ol li {
-    margin: 20px 0;
+/* リスト */
+ol {
+    background: white;
+    padding: 20px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-ol li a {
+li {
+    margin: 12px 0;
+}
+
+/* リンク */
+a {
     text-decoration: none;
-    color: #ffffff;
-    font-size: 1.4rem;
-    padding: 12px 25px;
-    display: inline-block;
-    border-radius: 50px;
-    border: 1px solid #ffffff;
-    transition: 0.3s ease;
+    color: #2563eb;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
-/* ホバー演出 */
-ol li a:hover {
-    background: #ffffff;
-    color: #0e0e10;
-    transform: translateY(-5px);
+a:hover {
+    color: #1e3a8a;
+    padding-left: 5px;
 }
-
-/* アニメーション */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(25px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* スマホ対応 */
-@media (max-width: 600px) {
-    h1 {
-        font-size: 2.2rem;
-    }
-    ol li a {
-        font-size: 1.2rem;
-    }
-}
-
-html, body {
-  font-family: "M PLUS Rounded 1c", sans-serif;
-  background: linear-gradient(135deg, #0a0a0a, #003b5c);
-  color: #e0e0e0;
-  margin: 0;
-  padding: 0;
-  line-height: 1.8;
-}
-
