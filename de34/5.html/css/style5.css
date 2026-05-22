@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+/* ページ全体 */
+body {
+    margin: 0;
+    padding: 30px;
+    font-family: "Yu Gothic", sans-serif;
+    background: linear-gradient(135deg, #eef4ff, #dbeafe);
+    color: #333;
+    line-height: 1.8;
+}
+
+/* メインタイトル */
+h1 {
+    text-align: center;
+    font-size: 42px;
+    color: #1d4ed8;
+    margin-bottom: 40px;
+    border-bottom: 4px solid #60a5fa;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+/* サブタイトル */
+h2 {
+    margin-top: 40px;
+    color: #2563eb;
+    border-left: 8px solid #60a5fa;
+    padding-left: 12px;
+    font-size: 28px;
+}
+
+/* 説明文 */
+div {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 15px 20px;
+    margin-top: 10px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    font-size: 18px;
+}
+
+/* 改行の余白調整 */
+br {
+    display: block;
+    margin-bottom: 10px;
+}
