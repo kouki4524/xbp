@@ -1,0 +1,40 @@
+body {
+    font-family: "Yu Gothic", sans-serif;
+    background-color: #f5f7fa;
+    margin: 0;
+    padding: 40px;
+    text-align: center;
+}
+
+h1 {
+    color: #1f4e79;
+    border-bottom: 3px solid #1f4e79;
+    display: inline-block;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+a {
+    display: inline-block;
+    margin: 20px 0;
+    padding: 12px 20px;
+    background-color: #1f4e79;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+a:hover {
+    background-color: #2f75b5;
+}
+
+div {
+    width: 70%;
+    margin: 15px auto;
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    line-height: 1.8;
+}
