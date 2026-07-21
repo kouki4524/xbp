@@ -1,0 +1,57 @@
+/* 全体 */
+body{
+    font-family: "Yu Gothic", "Meiryo", sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 30px;
+    text-align: center;
+    line-height: 1.8;
+}
+
+/* タイトル */
+h1{
+    color: #1f4e79;
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+h2{
+    color: #444;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+/* 説明文 */
+p{
+    font-size: 18px;
+    margin: 10px auto;
+    width: 80%;
+}
+
+/* リンクをボタン風に */
+a{
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 24px;
+    background-color: #1f4e79;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+a:hover{
+    background-color: #2f75b5;
+    transform: scale(1.05);
+}
+
+/* スライド画像 */
+img{
+    display: block;
+    width: 80%;
+    max-width: 1000px;
+    margin: 40px auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
